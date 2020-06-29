@@ -19,6 +19,7 @@ pipeline {
 	stage('test') {
 	steps {
    //  nodejs(nodeJSInstallationName: 'nodejs') 
+       sh 'npm audit fix'
        sh 'npm install --only=dev'
        sh 'npm test'
      }

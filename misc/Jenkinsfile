@@ -21,7 +21,7 @@ pipeline {
    //  nodejs(nodeJSInstallationName: 'nodejs') 
        sh 'npm audit fix'
        sh 'npm install --only=dev'
-       sh 'npm audit fix'
+       sh 'npm audit fix --force'
        sh 'npm test'
        sh 'npm audit fix --force'
      }

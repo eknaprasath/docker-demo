@@ -18,6 +18,7 @@ pipeline {
    }
 	stage('test') {
 	steps {
+         sh 'echo "testing"'
    //  nodejs(nodeJSInstallationName: 'nodejs') 
  //      sh 'npm audit fix'
  //      sh 'npm install --only=dev'
